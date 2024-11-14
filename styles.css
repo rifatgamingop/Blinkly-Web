@@ -1,0 +1,282 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #6200ea;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    position: relative;
+  }
+  
+  .navbar .logo {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-links li {
+    display: inline-block;
+  }
+  
+  .nav-links a {
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+  
+  /* Hamburger Menu */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    width: 25px;
+    cursor: pointer;
+  }
+  
+  .hamburger div {
+    height: 4px;
+    background-color: white;
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 80px;
+      right: 3rem;
+      background-color: #6200ea;
+      border-radius: 5px;
+      width: 200px;
+      flex-direction: column;
+      gap: 1.5rem;
+      padding: 1rem;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: #6200ea;
+    color: white;
+    padding: 6rem 3rem;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-button {
+    background-color: #ff4081;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #d7005f;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Features Section */
+  .features {
+    padding: 3rem 2rem;
+    background-color: #f0f0f0;
+    text-align: center;
+  }
+  
+  .features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .feature-cards {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .feature-card {
+    background-color: white;
+    padding: 2rem;
+    width: 30%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .feature-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-card p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  /* Download Section */
+  .download {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #f5f5f5;
+  }
+  
+  .download h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .download p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .download-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .btn-download {
+    background-color: #6200ea;
+    color: white;
+    font-size: 1.2rem;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-align: center;
+    text-decoration: none;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .btn-download:hover {
+    background-color: #ff4081;
+  }
+  
+  .windows {
+    background-color: #0078d4; /* Windows Blue */
+  }
+  
+  .android {
+    background-color: #34b7f1; /* Android Green */
+  }
+  
+  .apple {
+    background-color: #999999; /* Apple Light Gray */
+  }
+  
+  /* Device Logo Styling */
+  .device-logo {
+    width: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  /* Hover Effects for individual buttons */
+  .windows:hover {
+    background-color: #005a8d; /* Darker blue for hover */
+  }
+  
+  .android:hover {
+    background-color: #0288d1; /* Darker green for hover */
+  }
+  
+  .apple:hover {
+    background-color: #7a7a7a; /* Slightly darker gray for hover */
+  }
+  
+  /* Contact Section */
+  .contact {
+    padding: 3rem 2rem;
+    background-color: #6200ea;
+    color: white;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contact p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Footer */
+  footer {
+    padding: 2rem;
+    background-color: #333;
+    color: white;
+    text-align: center;
+  }
+  
